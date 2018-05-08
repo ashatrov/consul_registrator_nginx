@@ -1,3 +1,4 @@
+```
 export CONSUL_CONTAINER=$(docker run -d --name=consul --net=host gliderlabs/consul-server -bootstrap -bind=172.30.0.225)
 echo $CONSUL_CONTAINER
 
@@ -45,3 +46,4 @@ docker rm $REGISTRATOR_CONTAINER
 
 docker stop $CONSUL_CONTAINER
 docker rm $CONSUL_CONTAINER
+```
