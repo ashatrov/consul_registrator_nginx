@@ -3,6 +3,10 @@
 
 It is exaple how to generate and keep updated configs (e.g. Nginx) based on information from Consul
 
+## Other possible options
+* PAProxy and Docker Gen in one container https://github.com/amazeeio/docker-haproxy It works with docker.sock and reading containers tags to generate HAProxy config.
+* Docker Gen itself can be used different ways, as an registrator in service discovery or together with Nginx, Logging etc. https://github.com/jwilder/docker-gen https://github.com/jwilder/nginx-proxy 
+
 ## Run consul and Registrator
 Run consul server and save its container ID to CONSUL_CONTAINER variable
 
